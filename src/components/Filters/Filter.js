@@ -19,7 +19,7 @@ let years = [
   '2020',
 ];
 
-const Year = React.memo((props) => {
+export const Year = React.memo((props) => {
   const setLaunchYear = (e) => {
     props.setYear(e.target.textContent);
   };
@@ -28,7 +28,7 @@ const Year = React.memo((props) => {
       <label>Launch Year</label>
       <div className="options">
         {years.map((year, i) => (
-          <div onClick={setLaunchYear} key={`year-${i}`}>
+          <div onClick={setLaunchYear} key={`year-${i}`} data-testid={year}>
             <span className={props.year === year ? 'active' : ''}>{year}</span>
           </div>
         ))}
@@ -37,7 +37,7 @@ const Year = React.memo((props) => {
   );
 });
 
-const Launch = React.memo((props) => {
+export const Launch = React.memo((props) => {
   const setLaunchValue = (e) =>
     props.setLaunching(e.target.textContent.toLowerCase());
 
@@ -58,13 +58,13 @@ const Launch = React.memo((props) => {
   );
 });
 
-const Lending = React.memo((props) => {
+export const Landing = React.memo((props) => {
   const setLandingValue = (e) =>
     props.setLanding(e.target.textContent.toLowerCase());
 
   return (
     <section className="filter">
-      <label>Successfull Landing</label>
+      <label htmlFor="landing">Successfull Landing</label>
       <div className="options">
         <div onClick={setLandingValue}>
           <span className={props.land === 'true' ? 'active' : ''}>True</span>
@@ -84,7 +84,7 @@ export default class Filters extends React.Component {
         <div className="filterLabel">Filters</div>
         <Year setYear={setYear} year={initialValue.year} />
         <Launch setLaunching={setLaunching} launch={initialValue.launching} />
-        <Lending setLanding={setLanding} land={initialValue.landing} />
+        <Landing setLanding={setLanding} land={initialValue.landing} />
       </div>
     );
   }
