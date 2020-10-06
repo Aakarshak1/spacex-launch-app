@@ -1,0 +1,12 @@
+.text {
+  margin-top: 30px;
+  text-align: center;
+}
+.loading img {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

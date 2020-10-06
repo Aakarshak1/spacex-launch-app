@@ -1,0 +1,65 @@
+.Missioncard {
+  width: 100%;
+  display: inline-block;
+  margin: 10px;
+  flex: 1 0 auto;
+}
+.Missioncard .card-body {
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 14px;
+  background: #fff;
+  height: 90%;
+}
+
+.Missioncard .img {
+  background: #f2f2f2;
+  height: 152px;
+  margin: auto;
+  display: block;
+}
+
+.Missioncard .img img {
+  height: 150px;
+  margin: auto;
+  display: block;
+}
+
+.label {
+  color: #323a6a;
+  font-weight: bold;
+  margin: 13px 0;
+  display: block;
+}
+
+.label ~ div {
+  margin: 10px 0;
+  color: #4a4d91;
+}
+
+strong {
+  color: black;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+@media (min-width: 700px) {
+  .Missioncard {
+    width: 50%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Missioncard {
+    width: 25%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
