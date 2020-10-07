@@ -13,7 +13,7 @@ To run this project locally, run the following command `npm start`, this will st
 
 ## Deployment
 
-App is deployed using **Netlify** [url](url)
+App is deployed using **Netlify** [https://spacex-mission.netlify.app/](https://spacex-mission.netlify.app/)
 
 ## Approach
 
@@ -34,3 +34,23 @@ App is deployed using **Netlify** [url](url)
 - PropTypes
 
 ## Lighthouse Score
+
+<h2 align="center"> Overall Score </h2>
+
+![overall lighthouse score](./images/Spacex-Overall-LightHouseScore.png)
+
+<h2 align="center"> Performance </h2>
+
+![performace](./images/Spacex-performance.png)
+
+<h2 align="center"> Accessibility </h2>
+
+![accessibility](./images/Spacex-Accessibility.png)
+
+<h2 align="center"> Best Practice </h2>
+
+![Best practice](./images/Spacex-Best-practice.png)
+
+<h2 align="center"> SEO </h2>
+
+![SEO](./images/Spacex-SEO.png)
