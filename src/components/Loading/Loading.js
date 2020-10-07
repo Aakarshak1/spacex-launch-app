@@ -9,7 +9,7 @@ const loader = (
     color="#000"
     height={100}
     width={100}
-    timeout={2000} //3 secs
+    timeout={2000} //2 secs
   />
 );
 
@@ -21,7 +21,7 @@ const Loading = (props) => {
       ) : (
         <img src={notFound} alt="no-result" />
       )}
-      <div className="text" data-testid="loadingStatus">
+      <div className="text">
         {props.type === 'Loading' ? 'Loading...' : 'No Result Found'}
       </div>
     </div>
