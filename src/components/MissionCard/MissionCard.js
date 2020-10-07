@@ -44,4 +44,15 @@ const MissionCard = ({ launch }) => {
   );
 };
 
+MissionCard.propTypes = {
+  launch: PropTypes.shape({
+    links: PropTypes.object.isRequired,
+    mission_name: PropTypes.string.isRequired,
+    flight_number: PropTypes.number.isRequired,
+    mission_id: PropTypes.array,
+    launch_year: PropTypes.string.isRequired,
+    launch_success: PropTypes.bool.isRequired,
+    rocket: PropTypes.object.isRequired,
+  }).isRequired,
+};
 export default MissionCard;

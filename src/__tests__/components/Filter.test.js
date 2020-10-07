@@ -1,6 +1,5 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import renderer from 'react-test-renderer';
 
 import { Year, Launch, Landing } from '../../components/Filters/Filter';
 

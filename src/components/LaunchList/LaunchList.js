@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import './launchList.css';
 
 import MissionCard from '../MissionCard/MissionCard.js';
@@ -22,4 +24,7 @@ const LaunchList = ({ list }) => {
   );
 };
 
+LaunchList.propTypes = {
+  list: PropTypes.array.isRequired,
+};
 export default LaunchList;

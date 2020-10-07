@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './filter.css';
 
 let years = [
@@ -89,3 +90,10 @@ export default class Filters extends React.Component {
     );
   }
 }
+
+Filters.propTypes = {
+  setYear: PropTypes.func.isRequired,
+  setLaunching: PropTypes.func.isRequired,
+  initialValue: PropTypes.object.isRequired,
+  setLanding: PropTypes.func.isRequired,
+};

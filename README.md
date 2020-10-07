@@ -31,5 +31,6 @@ App is deployed using **Netlify** [url](url)
 - React
 - React-Testing-Library
 - React-Loader-Spinner
+- PropTypes
 
 ## Lighthouse Score

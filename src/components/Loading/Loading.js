@@ -1,5 +1,6 @@
 import React from 'react';
 import Loader from 'react-loader-spinner';
+import PropTypes from 'prop-types';
 
 import notFound from '../../assets/No-Result.webp';
 const loader = (
@@ -21,10 +22,14 @@ const Loading = (props) => {
         <img src={notFound} alt="no-result" />
       )}
       <div className="text" data-testid="loadingStatus">
-        {props.type === 'loading' ? 'Loading...' : 'No Result Found'}
+        {props.type === 'Loading' ? 'Loading...' : 'No Result Found'}
       </div>
     </div>
   );
+};
+
+Loading.propTypes = {
+  type: PropTypes.string.isRequired,
 };
 
 export default Loading;
