@@ -13,7 +13,7 @@ class App extends Component {
       year: '',
       launching: '',
       landing: '',
-      list: [],
+      list: null,
       count: 100,
     };
   }
@@ -26,21 +26,21 @@ class App extends Component {
   };
 
   changeLaunchYear = (year) => {
-    this.setState({ list: [] });
+    this.setState({ list: null });
     year = year === this.state.year ? '' : year;
     this.setState({ year });
     this.filterLaunchResult(year, this.state.launching, this.state.landing);
   };
 
   changeLaunchFilter = (launching) => {
-    this.setState({ list: [] });
+    this.setState({ list: null });
     launching = launching === this.state.launching ? '' : launching;
     this.setState({ launching });
     this.filterLaunchResult(this.state.year, launching, this.state.landing);
   };
 
   changeLandingFilter = (landing) => {
-    this.setState({ list: [] });
+    this.setState({ list: null });
     landing = landing === this.state.landing ? '' : landing;
     this.setState({ landing });
     this.filterLaunchResult(this.state.year, this.state.launching, landing);
